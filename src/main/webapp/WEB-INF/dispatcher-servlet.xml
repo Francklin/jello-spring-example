@@ -15,7 +15,8 @@
 
     <mvc:annotation-driven />
     <mvc:default-servlet-handler/>
-    <context:component-scan base-package="com.web" />
+    <mvc:view-controller path="/**"/>
+    <!--<context:component-scan base-package="com.web" />-->
 
     <bean id="velocityConfigurer" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
         <property name="resourceLoaderPath" value="/WEB-INF/views/"/>
